@@ -9,7 +9,7 @@ def user_choice
       "p" => "Paper",
       "s" => "Scissors"
       }             
-    choices = gets.chomp
+    choices = gets.chomp.downcase
     prompt  "That's not a valid choice, please try again" unless choice_list[choices]
   end until choice_list[choices]
   return choice_list[choices]
