@@ -4,10 +4,11 @@ end
 
 def user_choice
   begin
-    choice_list = {"r" => "Rock",
-                    "p" => "Paper",
-                    "s" => "Scissors"
-                  }             
+    choice_list = {
+      "r" => "Rock",
+      "p" => "Paper",
+      "s" => "Scissors"
+      }             
     choices = gets.chomp
     prompt  "That's not a valid choice, please try again" unless choice_list[choices]
   end until choice_list[choices]
@@ -15,10 +16,11 @@ def user_choice
 end
 
 def computer_choice
-  choice_hash = {"r" => "Rock",
-                    "p" => "Paper",
-                    "s" => "Scissors"
-                  }
+  choice_hash = {
+      "r" => "Rock",
+      "p" => "Paper",
+      "s" => "Scissors"
+      }
   choice = choice_hash.values
   return choice[rand(choice.size)]
 end
