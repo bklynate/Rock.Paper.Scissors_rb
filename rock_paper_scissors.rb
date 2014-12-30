@@ -21,8 +21,7 @@ def computer_choice
       "p" => "Paper",
       "s" => "Scissors"
       }
-  choice = choice_hash.values
-  return choice[rand(choice.size)]
+  choice_hash.values.sample
 end
 
 def winner(choice,computer_choice)
